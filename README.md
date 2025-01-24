@@ -59,7 +59,7 @@
 </ul>
 
 <h2>App Screenshots</h2>
-<p><img src="app_screenshot1.png" alt="Main University App Screenshot" width="300"></p>
+<p><img src="1.png" alt="Main University App Screenshot" width="300"></p>
 <p><img src="app_screenshot2.png" alt="Admin App Screenshot" width="300"></p>
 
 <h2>Contribution</h2>
