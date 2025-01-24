@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContinueActivity"
+    android:background="@drawable/vu_bg2"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/imageView_logo2"
+        android:layout_width="120dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="160dp"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/vu_logo5"/>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_below="@+id/imageView_logo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Hi, Welcome to the"
+        android:textColor="@color/White"
+        android:textSize="18dp"
+        tools:ignore="NotSibling"/>
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-2dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Varendra\nUniversity\nApp."
+        android:textColor="@color/White"
+        android:textSize="33dp"
+        android:textStyle="bold"
+        tools:ignore="NotSibling"/>
+    <Button
+        android:id="@+id/buttonContinue"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="680dp"
+        android:background="@drawable/border_button4"
+        android:fontFamily="@font/poppinssemibold"
+        android:gravity="center"
+        android:text="Continue  >"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="17sp"/>
+</RelativeLayout>

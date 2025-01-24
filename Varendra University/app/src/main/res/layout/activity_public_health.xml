@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PublicHealthActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+            android:id="@+id/backHome"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#C24C2E"
+            android:gravity="start|center"
+            android:textAlignment="center"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/back_icon2" />
+            <TextView
+                android:id="@+id/dep2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Department of Public Health"
+                android:textAlignment="center"
+                android:textColor="@color/White"
+                android:layout_marginTop="1dp"
+                android:layout_marginStart="9dp"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/glance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/backHome"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Public Health"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            tools:ignore="NotSibling"/>
+
+        <LinearLayout
+            android:id="@+id/social_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginStart="265dp"
+            android:layout_below="@+id/backHome"
+            android:layout_marginTop="7dp">
+
+            <ImageView
+                android:id="@+id/fb"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="20dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/web" />
+
+            <ImageView
+                android:id="@+id/ld"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/linkedin" />
+
+            <ImageView
+                android:id="@+id/tw"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="20dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/facebook" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/social_icon"
+            android:background="#c44d2d"
+            android:id="@+id/textView_show_department"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/social_icon"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="161dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#c44d2d"
+                android:fontFamily="@font/poppinsmedium"
+                android:padding="5dp"
+                android:text="Dept. Coordinator"
+                android:textAlignment="center"
+                android:textColor="@color/White"
+                android:textSize="12dp"
+                tools:ignore="NotSibling"
+                android:layout_marginBottom="5dp"/>
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/khademul"
+                android:layout_below="@+id/text"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/photo"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Md. Khademul Islam Molla, PhD"
+                android:textAlignment="center"
+                android:textColor="#c44d2d"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:ignore="NotSibling" />
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text2"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Welcome to the Department of Computer Science and Engineering, Varendra University! Varendra University is at the forefront of higher education in Northern Bangladesh and is the first and leading private university in the northern region of the country approved by the government and the University Grants Commission (UGC). Varendra University started its academic journey in September 2012. The fundamental goal of Varendra University is to give quality advanced education to the students by experienced and reputed academics in order to produce skilled human resources needed for the social and economic development of Bangladesh."
+                    android:textAlignment="center"
+                    android:textColor="@color/Black"
+                    android:padding="5dp"
+                    android:textSize="9dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/readMore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:background="@color/Black"
+                    android:padding="5dp"
+                    android:text="Read More"
+                    android:textColor="@color/White"
+                    android:textSize="12dp"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text2"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/programs"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsbold"
+                    android:padding="2dp"
+                    android:text="Programs"
+                    android:textAlignment="center"
+                    android:textColor="@color/Black"
+                    android:textSize="15dp"
+                    android:background="#EAEAEA"/>
+
+                <TextView
+                    android:id="@+id/club1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#c44d2d"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:padding="5dp"
+                    android:text="Overview"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
+                    android:textSize="12dp"
+                    tools:ignore="NotSibling" />
+
+                <TextView
+                    android:id="@+id/curriculum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#c44d2d"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:padding="5dp"
+                    android:text="Curriculum"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
+                    android:textSize="12dp"
+                    tools:ignore="NotSibling" />
+
+                <TextView
+                    android:id="@+id/courseDescription"
+                    android:layout_width="391dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#c44d2d"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:padding="5dp"
+                    android:text="Course Description"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
+                    android:textSize="12dp"
+                    tools:ignore="NotSibling" />
+
+                <TextView
+                    android:id="@+id/gradingSystem"
+                    android:layout_width="391dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#c44d2d"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:padding="5dp"
+                    android:text="Grading System"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
+                    android:textSize="12dp"
+                    tools:ignore="NotSibling" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp">
+                    <TextView
+                        android:id="@+id/progranOffices"
+                        android:layout_width="380dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsbold"
+                        android:padding="2dp"
+                        android:text="Program Officers"
+                        android:textAlignment="center"
+                        android:textColor="@color/Black"
+                        android:textSize="15dp"
+                        android:background="#EAEAEA"/>
+                    <GridLayout
+                        android:id="@+id/box"
+                        android:layout_width="380dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/backHome"
+                        android:layout_marginTop="5dp"
+                        android:columnCount="4"
+                        android:rowCount="4">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/robotic"
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:layout_row="0"
+                            android:layout_rowWeight="1"
+                            android:layout_column="0"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            app:cardBackgroundColor="@color/White"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="47dp"
+                                    android:src="@drawable/tanzilazinat" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="10dp"
+                                    android:layout_marginTop="5dp"                                android:fontFamily="@font/poppinsmedium"
+                                    android:text="Tanzila Zinat"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/Black"
+                                    android:textSize="8dp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppinsmedium"
+                                    android:text="Sr.Executive(Program Office)\noffice.cse@vu.edu.bd"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/Black"
+                                    android:textSize="6dp" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/code"
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:layout_row="0"
+                            android:layout_rowWeight="1"
+                            android:layout_column="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            app:cardBackgroundColor="@color/White"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="47dp"
+                                    android:src="@drawable/mahmudmurshed" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="10dp"
+                                    android:layout_marginTop="5dp"                                android:fontFamily="@font/poppinsmedium"
+                                    android:text="Mahmud Murshed"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/Black"
+                                    android:textSize="8dp"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppinsmedium"
+                                    android:text="Executive(Program Office)\noffice.cse2@vu.edu.bd"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/Black"
+                                    android:textSize="6dp" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/web"
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:layout_row="0"
+                            android:layout_rowWeight="1"
+                            android:layout_column="2"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            app:cardBackgroundColor="@color/White"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_margin="3dp">
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="47dp"
+                                    android:src="@drawable/image_pp_default" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/poppinsmedium"
+                                    android:text="Md.Wadud Jahan"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/Black"
+                                    android:textSize="8dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppinsmedium"
+                                    android:text="Jr.Executive(Contractual)\noffice.evening@vu.edu.bd"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/Black"
+                                    android:textSize="6dp" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/web2"
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:layout_row="1"
+                            android:layout_rowWeight="0"
+                            android:layout_column="0"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            app:cardBackgroundColor="@color/White"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_margin="3dp">
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="47dp"
+                                    android:src="@drawable/ashraf" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/poppinsmedium"
+                                    android:text="Md.Ashraf Ali Joy"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/Black"
+                                    android:textSize="8dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppinsmedium"
+                                    android:text="Executive-Lab\nlab.cse2@vu.edu.bd"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/Black"
+                                    android:textSize="6dp" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/web3"
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:layout_row="1"
+                            android:layout_rowWeight="1"
+                            android:layout_column="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill"
+                            app:cardBackgroundColor="@color/White"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_margin="3dp">
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="47dp"
+                                    android:src="@drawable/asif" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/poppinsmedium"
+                                    android:text="Asif Mahamud"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/Black"
+                                    android:textSize="8dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppinsmedium"
+                                    android:text="Executive-lab\nlab.cse3@vu.edu.bd"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/Black"
+                                    android:textSize="6dp" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </GridLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:padding="0dp">
+                <TextView
+                    android:id="@+id/contacts"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsbold"
+                    android:padding="2dp"
+                    android:text="Contacts"
+                    android:textAlignment="center"
+                    android:textColor="@color/Black"
+                    android:textSize="15dp"
+                    android:background="#EAEAEA"/>
+                <TextView
+                    android:id="@+id/number"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:text="Mobile: 0173-0406504\nE-mail: info3@vu.edu.bd\nSkype ID: vu.edu.bd"
+                    android:textColor="@color/White"
+                    android:background="#c44d2d"
+                    android:textSize="13dp"
+                    android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactActivity"
+    android:background="@drawable/vu_bg3">
+    <LinearLayout
+        android:id="@+id/backHome"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#C24C2E"
+        android:gravity="start|center"
+        android:textAlignment="center"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/back_icon2" />
+        <TextView
+            android:id="@+id/dep2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Contact"
+            android:textAlignment="center"
+            android:textColor="@color/White"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="15dp"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageVie"
+        android:layout_width="350dp"
+        android:layout_height="220dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/art"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backHome"
+        android:layout_gravity="center"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/phone2"
+            android:background="@drawable/border_box2"
+            android:padding="8dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="+88 017 304 065 90\n+88 017 304 065 01-3"
+            android:textAlignment="textStart"
+            android:textColor="@color/Black"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/email"
+        android:layout_below="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/email2"
+            android:background="@drawable/border_box2"
+            android:padding="8dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" info@vu.edu.bd"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:fontFamily="@font/poppinssemibold"
+            android:textColor="@color/Black"
+            android:textSize="14dp"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/location"
+        android:layout_below="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/location2"
+            android:background="@drawable/border_box2"
+            android:padding="8dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Varendra University,Rajshahi Bypass\nRoad, Chandrima, Paba, Rajshahi-6204"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:fontFamily="@font/poppinssemibold"
+            android:textColor="@color/Black"
+            android:textSize="14dp"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textview_sm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_marginTop="50dp"
+        android:text="Socail Media"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/Black"
+        android:textSize="13sp"/>
+    <LinearLayout
+        android:id="@+id/social_icon"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/location"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/fb"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="15dp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/ld"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/linkedin" />
+
+        <ImageView
+            android:id="@+id/tw"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="15dp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/ins"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="15dp"
+            app:srcCompat="@drawable/twitter"/>
+
+        <ImageView
+            android:id="@+id/yt"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/youtube" />
+    </LinearLayout>
+
+</RelativeLayout>

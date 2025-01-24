@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:background="@drawable/border_box"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="87dp"
+                android:layout_height="114dp"
+                android:layout_weight="1.5"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:id="@+id/teacherName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@color/Black"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/teacherEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Email"
+                    android:textColor="@color/Black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/teacherNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="Numar"
+                    android:textColor="@color/Black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/teacherUpdate"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="4dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/Black"
+                    android:text="Update Info"
+                    android:textAlignment="center"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/teacherImage"
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5"
+                android:src="@drawable/teacher" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

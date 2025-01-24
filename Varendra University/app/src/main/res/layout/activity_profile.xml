@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@color/White"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#c44d2d">
+
+            <ImageView
+                android:id="@+id/profile_dp"
+                android:layout_width="112dp"
+                android:layout_height="118dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/image_pp_default"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/welcome_text"
+                android:layout_below="@+id/profile_dp"
+                android:hint="Loading.."
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/White"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:layout_margin="15dp"
+            android:background="#009688">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/name"
+                android:id="@+id/divider_name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_name"
+                android:layout_alignStart="@+id/divider_name"
+                android:hint="Loading...."
+                android:layout_marginStart="50dp"
+                android:textSize="18dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/textView_name"
+                android:background="@color/White"
+                android:id="@+id/textView_show_name"
+                tools:ignore="DuplicateIds" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/id"
+                android:id="@+id/divider_studentId"
+                android:layout_below="@+id/textView_show_name"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/textView_studentId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider_studentId"
+                android:layout_alignStart="@+id/divider_studentId"
+                android:layout_marginStart="49dp"
+                android:layout_marginTop="-26dp"
+                android:hint="Loading...."
+                android:textSize="18dp" />
+
+            <View
+                android:id="@+id/textView_show_studentId"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/textView_studentId"
+                android:background="@color/White"/>
+
+            <ImageView
+                android:id="@+id/divider_department"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/textView_studentId"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/id" />
+
+            <TextView
+                android:id="@+id/textView_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider_department"
+                android:layout_alignStart="@+id/divider_department"
+                android:layout_marginStart="51dp"
+                android:layout_marginTop="-25dp"
+                android:hint="Loading...."
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/textView_department"
+                android:background="@color/White"
+                android:id="@+id/textView_show_department"/>
+
+            <ImageView
+                android:id="@+id/divider_email"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/textView_show_department"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/email" />
+
+            <TextView
+                android:id="@+id/textView_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider_email"
+                android:layout_alignStart="@+id/divider_email"
+                android:layout_marginStart="51dp"
+                android:layout_marginTop="-25dp"
+                android:hint="Loading...."
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/textView_email"
+                android:background="@color/White"
+                android:id="@+id/textView_show_email"/>
+
+            <ImageView
+                android:id="@+id/divider_number"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/textView_show_email"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/phone" />
+
+            <TextView
+                android:id="@+id/textView_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider_number"
+                android:layout_alignStart="@+id/divider_number"
+                android:layout_marginStart="51dp"
+                android:layout_marginTop="-25dp"
+                android:hint="Loading...."
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/textView_number"
+                android:background="@color/White"
+                android:id="@+id/textView_show_number"/>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:elevation="10dp"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu" />
+</RelativeLayout>

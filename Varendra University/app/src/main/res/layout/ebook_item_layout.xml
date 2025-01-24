@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/White">
+
+    <LinearLayout
+        android:id="@+id/backHome"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#C24C2E"
+        android:gravity="start|center"
+        android:textAlignment="center"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/back_icon2" />
+        <TextView
+            android:id="@+id/dep2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:text="VU Library"
+            android:textAlignment="center"
+            android:textColor="@color/White"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="9dp"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vu_pdf"/>
+
+        <TextView
+            android:id="@+id/ebookName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data"
+            android:textColor="@color/black"
+            android:layout_marginStart="5dp"/>
+        <ImageView
+            android:id="@+id/ebookDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vu_done"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/White">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/head">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:layout_marginTop="0dp">
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/vu_campus" />
+
+            <GridLayout
+                android:id="@+id/box"
+                android:layout_width="400dp"
+                android:layout_height="415dp"
+                android:layout_below="@+id/photo"
+                android:layout_margin="8dp"
+                android:columnCount="4"
+                android:rowCount="4">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/vuDepartment"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="@color/White"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/vu_department" />
+
+                        <TextView
+                            android:layout_width="97dp"
+                            android:layout_height="25dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Departments"
+                            android:textAlignment="center"
+                            android:textColor="@color/Black"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/vuLibrary"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="2"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="@color/White"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/vu_book"/>
+                        <TextView
+                            android:layout_width="94dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="VU Library"
+                            android:textAlignment="center"
+                            android:textColor="@color/Black"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/vuTeachers"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_rowWeight="1"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="@color/White"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/vu_teachers" />
+
+                        <TextView
+                            android:layout_width="91dp"
+                            android:layout_height="25dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Teachers"
+                            android:textAlignment="center"
+                            android:textColor="@color/Black"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/routine"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="@color/White"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/vu_routine" />
+
+                        <TextView
+                            android:layout_width="101dp"
+                            android:layout_height="25dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Routine"
+                            android:textAlignment="center"
+                            android:textColor="@color/Black"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/vuNote"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="@color/White"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/vu_notepad" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Notepad"
+                            android:textAlignment="center"
+                            android:textColor="@color/Black"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/vuTransportation"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="@color/White"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/vu_transportation" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Transportation"
+                            android:textAlignment="center"
+                            android:textColor="@color/Black"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/clubs"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_rowWeight="0"
+                    android:layout_column="2"
+                    android:layout_columnWeight="0"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="@color/White"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/vu_clubs" />
+                        <TextView
+                            android:layout_width="95dp"
+                            android:layout_height="25dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Clubs"
+                            android:textAlignment="center"
+                            android:textColor="@color/Black"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/vuContact"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:layout_rowWeight="1"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="@color/White"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/vu_contact" />
+                        <TextView
+                            android:layout_width="101dp"
+                            android:layout_height="25dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Contact"
+                            android:textAlignment="center"
+                            android:textColor="@color/Black"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

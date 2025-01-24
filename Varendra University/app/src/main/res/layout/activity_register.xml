@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/vu_bg4"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView_logo"
+        android:layout_width="240dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/vu_logo6" />
+
+    <TextView
+        android:id="@+id/account_text"
+        android:layout_below="@+id/imageView_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Create New Account"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="25dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/account_text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/register_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border_box"
+            android:drawablePadding="8dp"
+            android:drawableTint="#C24C2E"
+            android:fontFamily="@font/poppinsmedium"
+            android:hint="Full Name*"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="#404040"
+            android:textColorHint="#E9707070"
+            android:textSize="14dp"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border_box"
+            android:drawablePadding="8dp"
+            android:drawableTint="#C24C2E"
+            android:fontFamily="@font/poppinsmedium"
+            android:hint="Email*"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="#404040"
+            android:textColorHint="#E9707070"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/register_studentId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_email"
+            android:drawablePadding="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border_box"
+            android:drawableTint="#C24C2E"
+            android:fontFamily="@font/poppinsmedium"
+            android:hint="Your Student ID*"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="#404040"
+            android:textColorHint="#E9707070"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/register_department"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_studentId"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border_box"
+            android:drawablePadding="8dp"
+            android:drawableTint="#C24C2E"
+            android:fontFamily="@font/poppinsmedium"
+            android:hint="Department*"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="#404040"
+            android:textColorHint="#E9707070"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/register_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_department"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border_box"
+            android:drawablePadding="8dp"
+            android:drawableTint="#C24C2E"
+            android:fontFamily="@font/poppinsmedium"
+            android:hint="Phone*"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="#404040"
+            android:textColorHint="#E9707070"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_phonenumber"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border_box"
+            android:drawablePadding="8dp"
+            android:drawableTint="#C24C2E"
+            android:fontFamily="@font/poppinsmedium"
+            android:hint="Password*"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="#404040"
+            android:textColorHint="#E9707070"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/register_confirmpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_password"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border_box"
+            android:drawablePadding="8dp"
+            android:drawableTint="#C24C2E"
+            android:fontFamily="@font/poppinsmedium"
+            android:hint="Confirm Password*"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="#404040"
+            android:textColorHint="#E9707070"
+            android:textSize="14dp"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_confirmpass"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="200dp"
+            android:background="@drawable/border_button"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Sign up"
+            android:textAlignment="center"
+            android:textColor="@color/White"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/register_cancel"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_confirmpass"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border_button"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Cancel"
+            android:textAlignment="center"
+            android:textColor="@color/White"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/textview_login"
+            android:layout_below="@+id/register_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Already signed up? Log in"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/Black"
+            android:textSize="18sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="10dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

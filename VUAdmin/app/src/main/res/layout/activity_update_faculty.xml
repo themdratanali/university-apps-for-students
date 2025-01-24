@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".faculty.UpdateFaculty"
+    android:background="@color/White">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/feb"
+        style="@style/Widget.Design.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        tools:layout_editor_absoluteX="340dp"
+        tools:layout_editor_absoluteY="660dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/baseline_add"
+        android:elevation="3dp"
+        app:fabSize="normal"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Computer Science and Engineering"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textColor="@color/Black"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#59000000"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cseDeparment"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/cseNoData">
+                <include layout="@layout/no_data_found"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Business Administration"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textColor="@color/Black"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#59000000"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bbaDeparment"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/bbaNoData">
+                <include layout="@layout/no_data_found"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Electrical and Electronic Engineering"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textColor="@color/Black"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#59000000"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/eeeDeparment"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/eeeNoData">
+                <include layout="@layout/no_data_found"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="English"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textColor="@color/Black"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#59000000"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/englishDeparment"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/englishNoData">
+                <include layout="@layout/no_data_found"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Economics"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textColor="@color/Black"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#59000000"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/economics"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/economicsNoData">
+                <include layout="@layout/no_data_found"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Journalism"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textColor="@color/Black"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#59000000"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/journalism"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/journalismNoData">
+                <include layout="@layout/no_data_found"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Law and Human Rights "
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textColor="@color/Black"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#59000000"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/law"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/lawNoData">
+                <include layout="@layout/no_data_found"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pharmacy"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textColor="@color/Black"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#59000000"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pharmacyDeparment"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/pharmacyNoData">
+                <include layout="@layout/no_data_found"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Political Science"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textColor="@color/Black"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#59000000"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/politicalScienceDeparment"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/politicalNoData">
+                <include layout="@layout/no_data_found"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sociology"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textColor="@color/Black"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#59000000"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sociologyDeparment"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/sociologyNoData">
+                <include layout="@layout/no_data_found"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

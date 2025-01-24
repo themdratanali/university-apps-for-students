@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VarendraUniversity"
+        tools:targetApi="31">
+        <activity
+            android:name=".TeacherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TeachersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EbookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClubPharmaBeeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClubMootCourtActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClubJournalismActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClubEnglishLanguageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClubBusinessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClubEClubActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClubWebDevelopmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClubProgrammersWorldActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClubRoboticSocietyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PublicHealthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SociologyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PoliticalScienceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JournalismActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LawActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EconomicsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LibraryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoutineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TransportationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdmissionBangla"
+            android:exported="false" />
+        <activity
+            android:name=".AdmissionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClubsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TuitionFeesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EEEActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BusinessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Depatments_CSEActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DepartmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContinueActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GetStartedActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
