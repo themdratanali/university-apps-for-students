@@ -74,4 +74,3 @@
 
 <h2>Contact</h2>
 <p><strong>Developer:</strong> Md. Ratan Ali</p>
-<p><strong>Email:themdratanali@gmail.com</strong>themdratanali@gmail.com</p>
