@@ -51,10 +51,10 @@
 </ul>
 
 <h2>App Screenshots</h2>
-<p><img src="1.png" alt="Main University App Screenshot" width="600"></p>
-<p><img src="2.png" alt="Main University App Screenshot" width="600"></p>
-<p><img src="3.png" alt="Main University App Screenshot" width="600"></p>
-<p><img src="4.png" alt="Admin App Screenshot" width="600"></p>
+<p><img src="app1.png" alt="Main University App Screenshot" width="600"></p>
+<p><img src="app2.png" alt="Main University App Screenshot" width="600"></p>
+<p><img src="app3.png" alt="Main University App Screenshot" width="600"></p>
+<p><img src="app4.png" alt="Admin App Screenshot" width="600"></p>
 
 <h2>Contribution</h2>
 <ol>
