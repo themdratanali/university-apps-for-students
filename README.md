@@ -36,14 +36,6 @@
     <li>Internet connection</li>
 </ul>
 
-<h2>Project Structure</h2>
-<pre><code>root-directory/
-│-- main-university-app/  # Student application source code
-│-- admin-app/            # Admin application source code
-│-- README.md             # Project documentation
-│-- LICENSE               # License information
-</code></pre>
-
 <h2>Usage</h2>
 <h3>For Students:</h3>
 <ul>
